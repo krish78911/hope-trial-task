@@ -1,0 +1,48 @@
+@import '../../theme/variables.scss';
+
+@mixin flexBox($display, $justify-content, $flex-direction: row) {
+  display: $display; /* display flex*/
+  justify-content: $justify-content;  /* Distributes space evenly between or around items */
+  flex-direction: $flex-direction; /* align items in row or column*/
+}
+
+/* Tab challenges section styling */
+.tab-challenges {
+  @include flexBox(flex, space-between, column);
+  height: 100%;
+  /* Top image section */
+  .top-image {
+    text-align: center;
+    z-index: 100;
+    img {
+      width: 100px;
+      margin-top: 50px;
+    }
+  }
+
+  /* Bottom images section */
+  .bottom-images {
+    @include flexBox(flex, space-evenly);
+    align-items: flex-end; /* Aligns images at the bottom */
+    margin-top: auto; /* Pushes the section to the bottom */
+    padding-left: 15px;
+    padding-right: 15px;
+    .bottom-image-container {
+      text-align: center;
+      img {
+        height: auto;
+        @media (min-width: 768px) {
+          width: 100px;
+        }
+      }
+      /* Text below the images */
+      .image-text {
+        margin-top: 8px; /* Adds spacing above the text */
+        margin-bottom: 15px;
+        font-size: $font-size-tabs;
+        color: $text-color-highlighted;
+        font-weight: bold;
+      }
+    }
+  }
+}

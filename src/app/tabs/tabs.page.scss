@@ -1,0 +1,33 @@
+@import '../../theme/variables.scss';
+
+ion-tabs {
+    ion-tab-bar {
+        height: 80px; /* Increase the height as needed */
+        display: flex; /* Ensure flexbox layout */
+        background-color: $tabs-background-color;
+
+        ion-tab-button {
+            flex: 1; /* Make each tab button take equal space */
+            justify-content: center;
+            align-items: center;
+            background-color: $tabs-background-color;
+            img {
+                width: 40px; // image icon in footer height
+            }
+            ion-label {
+                font-family: 'Open Sans', sans-serif;
+                color: $text-color-default;
+                font-size: $font-size-tabs;
+                margin-top: 8px;
+            }
+        }
+    
+        /* Style the active button's label text */
+        ion-tab-button.tab-selected {
+            ion-label {
+                color: $text-color-highlighted; /* change active tab color */
+                font-weight: bold; /* make active tab text as bold*/
+            }
+        }
+    }
+} 

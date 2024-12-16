@@ -1,0 +1,7 @@
+{
+  "name": "hope-trial-task",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

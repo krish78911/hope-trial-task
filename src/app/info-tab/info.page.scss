@@ -1,0 +1,30 @@
+@import '../../theme/variables.scss';
+
+/* Tab infos section styling */
+.tab-infos {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  ion-label {
+    text-align: center;
+    color: $text-color-highlighted;
+    margin-bottom: 40px;
+    margin-top: 50px;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    display: block;
+  }
+  
+  p {
+    text-align: left;
+    line-height: 2;
+    font-size: 15px;
+    color: $text-color-default;
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+
+  

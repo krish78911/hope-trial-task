@@ -1,0 +1,9 @@
+- Add Capacitor in android and ios:
+ionic cap add android
+ionic cap add ios
+
+- Update Android studio project:
+ionic cap sync
+
+- Open project in Android studio:
+ionic cap open android
